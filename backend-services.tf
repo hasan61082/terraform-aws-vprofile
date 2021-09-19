@@ -30,7 +30,7 @@ resource "aws_db_instance" "vprofile-rds" {
 }
 
 resource "aws_elasticache_cluster" "vprofile-cache" {
-  cluster_id           = "cluster-vprofile-cache"
+  cluster_id           = "vprofile-cache"
   engine               = "memcached"
   node_type            = "cache.t2.micro"
   num_cache_nodes      = 1
